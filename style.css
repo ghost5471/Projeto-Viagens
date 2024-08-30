@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat0",sans-serif ;
+    width: 100vw;
+}
+
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#313533 ;
+}
+
+
+a:hover{
+    font-weight: bold;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #3d4842;
+    color: white;
+    font-family: "Montserrat0",sans-serif ;
+
+    
+    
+}
+
+
+
+header{
+    height: calc(100vh - 150px); 
+    background: no-repeat center/80% url(assets/bernhard-HPrqZz4Vwj0-unsplash.jpg);
+    background-size: cover;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p{
+    font-weight: bold ;
+    margin: 0  30px;
+    font-size: 40px;
+}
+
+
+
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+   margin: 0 15px ;
+}
+
+.header-content{
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+      transform: translateY(-150px);
+
+}
+
+.header-content button {
+    transition: all 0.25s;
+}
+
+.header-content button:hover{
+    transform: scale(1.5)
+
+}
+
+.header-content h2{
+    margin-bottom: 10px;
+    font-size: 4rem;
+   
+
+
+}
+
+.pacotes{ background: #647879 ;
+    padding: 15px;
+}
+ 
+.pacotes .pacotes-cards{ 
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+justify-content: center;
+}
+
+.pacotes-tittle{
+    align-items: center;
+    width: 100%;
+    margin: 25px;
+}
+.pacotes .card{
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
+    margin:25px ;
+    position: relative;
+}
+
+.pacotes .card-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+
+
+}
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+
+
+.pacotes .card-content ul{
+    display: flex;
+    flex-flow: column;
+    padding-left: 15px ;
+    
+}
+.pacotes .card-content ul li{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0 ;
+    
+}
+
+
+.pacotes .card-content li svg{
+width: 18px;
+height: 18px;
+margin-right: 10px;
+    
+}
+
+.pacotes .card-content h2{
+    font-size: 
+    1rem;
+}
+
+.pacotes .card .card-tag-top{
+position: absolute;
+right: 0;
+background: #f19b39;
+border-radius: 8px 0 0 8px;
+padding: 5px 10px;
+top: 15px;
+}
+
+.pacotes .card .card-tag-bottom{
+    position: absolute;
+left: 0;
+border-radius:  0 8px 8px 0;
+padding: 5px 10px;
+top: 180px;
+background: #1d61dd;
+
+}
+
+.pacotes .card  .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.servicos{
+    padding: 15px;
+    margin: 0px 0px 28px 0px;
+}
+
+ .servicos .servicos-tittle{
+    text-align: center;
+    margin: 35px 0 ;
+ }
+
+ .servicos .servicos-cards{
+    display: flex;
+    margin-top: 25px;
+    max-width: 950px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+ }
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  20px;
+}
+
+.servicos .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+
+.servicos .card svg:hover{
+    color: #1d61dd;
+    transform: scale(1.1);
+
+}
+
+.servicos .card  h3{
+    font-weight: bold;
+}
+
+
+.servicos .card p{
+    color: grey;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+/*responsividade*/
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+
+.servicos button{
+    background: #1d61dd ;
+}
+
+.contato{
+    padding: 60px ;
+  background: #c9926c;
+    position: relative;
+}
+
+.contato .contato-card{
+    width: 320px;
+    height: 190px;
+    background: #fffffa;
+    position: absolute;
+    top: calc(50% - 106px);
+    left: calc(20% - 230px);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato .contato-card h2 {
+ padding-left: 50px;
+ text-align: left;
+
+}
+
+.contato .contato-card  li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #3b5162;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contato .contato-card  li svg {
+    width: 16px ;
+    margin-right: 10px;
+
+}
+
+.contato .mapBox iframe{
+    width: 100%; 
+    height: 450;
+  
+}
+
+/*rESPONSIVOS*/
+
+
+/* ESPECIAL PARA MAPA  */
+@media (max-width:950px){
+    .contato{
+        padding: 60px 3%;
+
+    }
+
+}
+
+@media (max-width:800px){
+    .contato{           
+        padding: 20px 0;
+    }
+
+    .contato .contato-card{
+        position: static;
+        margin: 40px auto;
+
+    }
+
+}
+
+/* TABLETS AND DOWN*/
+
+@media (max-width:767px){
+
+
+
+.header-content{
+    transform: translateY(-155px);
+}
+
+}
+
+
+
+
+/*   */
+
+@media (max-width:580px){
+    body{
+        width: 100%;
+    }
+}
+
+/* pphones and down */
+@media (max-width: 480px){
+
+    body{
+        margin-bottom: 55px;
+        }
+   
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+         width: 100%;    
+         padding: 0;
+         background:  #313533;
+         height: 55px;
+         color: white;
+         font-weight: bold;
+         z-index: 999;
+
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+    }
+
+    header nav p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato{
+        padding: 60px 0;
+    }
+
+    .contato .contato-card{
+        position: static;
+        margin: 40px auto;
+
+    }
+}
